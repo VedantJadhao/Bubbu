@@ -81,7 +81,6 @@
     </style>
 </head>
 <body>
-
     <div class="container" id="mainCard">
         <div style="color: #ff4d6d; font-size: 40px;">❤️</div>
         <img src="https://i.ibb.co/hR0MB6NN/Whats-App-Image-2026-04-04-at-00-42-25.jpg" class="profile-img">
@@ -94,7 +93,6 @@
             <button id="noBtn" onmouseover="actionNo()">No</button>
         </div>
     </div>
-
     <script>
         function actionNo() {
             const noBtn = document.getElementById('noBtn');
@@ -104,7 +102,6 @@
             noBtn.style.position = 'fixed';
             noBtn.style.left = x + 'px';
             noBtn.style.top = y + 'px';
-
             for (let i = 0; i < 10; i++) {
                 const flowers = ['🌸', '💐', '🌹', '🌺', '🌷'];
                 const f = document.createElement('div');
@@ -116,7 +113,6 @@
                 setTimeout(() => f.remove(), 5000);
             }
         }
-
         function forgiven() {
             const card = document.getElementById('mainCard');
             card.innerHTML = `
