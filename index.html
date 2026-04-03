@@ -1,163 +1,131 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Jyotuu ❤️</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(255, 255, 255, 1);
+            padding: 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 10;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ff4d6d;
+            margin-bottom: 20px;
+        }
+        h1 { color: #ff4d6d; font-size: 1.8rem; margin: 0; }
+        p { color: #555; line-height: 1.6; font-size: 1rem; }
+        .nickname { color: #ff4d6d; font-weight: bold; font-style: italic; }
+        .btn-group {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            height: 50px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        #yesBtn {
+            background: #ff4d6d;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        #noBtn {
+            background-color: white;
+            color: #6c757d;
+            border: 1px solid #dee2e6;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .flower {
+            position: fixed;
+            top: -50px;
+            z-index: 1;
+            font-size: 24px;
+            animation: fall linear forwards;
+        }
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;For Jyotuu ❤️&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(255, 255, 255, 1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 10;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.profile-img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 160px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 160px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>object-fit: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 5px solid #ff4d6d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: #ff4d6d; font-size: 1.8rem; margin: 0; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p { color: #555; line-height: 1.6; font-size: 1rem; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.nickname { color: #ff4d6d; font-weight: bold; font-style: italic; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.btn-group {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 25px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>#yesBtn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #ff4d6d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: pulse 2s infinite;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>#noBtn {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #6c757d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #dee2e6;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes pulse {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0%, 100% { transform: scale(1); }</p>
-<p class="p1"><span class="Apple-converted-space">            </span>50% { transform: scale(1.05); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.flower {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: -50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fall linear forwards;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fall {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to { transform: translateY(110vh) rotate(360deg); }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container" id="mainCard"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="color: #ff4d6d; font-size: 40px;"&gt;❤️&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="https://i.ibb.co/hR0MB6NN/Whats-App-Image-2026-04-04-at-00-42-25.jpg" class="profile-img"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;I'm So Sorry Jyotuu&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;I want to ask the forgiveness for what I did yesterday, I am really really sorry for all the things I did. I know this is just childish of me to do it in this way but I hope this will help you smile a bit.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="nickname"&gt;Please please please kuchuuuuu maaf kar deeeeee pleaseeee gochudiiiii.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Can we please clear the &lt;b&gt;"zeros"&lt;/b&gt; between us and get back to being &lt;b&gt;"ones"&lt;/b&gt;? 💻❤️&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="btn-group"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="yesBtn" onclick="forgiven()"&gt;Yes, I Forgive You&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="noBtn" onmouseover="actionNo()"&gt;No&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function actionNo() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const noBtn = document.getElementById('noBtn');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noBtn.innerText = "aisa karegi ab";</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const x = Math.random() * (window.innerWidth - 150);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const y = Math.random() * (window.innerHeight - 100);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noBtn.style.position = 'fixed';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noBtn.style.left = x + 'px';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>noBtn.style.top = y + 'px';</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Start the flower rain</p>
-<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; 10; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const flowers = ['🌸', '💐', '🌹', '🌺', '🌷'];</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const f = document.createElement('div');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>f.className = 'flower';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>f.innerText = flowers[Math.floor(Math.random() * flowers.length)];</p>
-<p class="p1"><span class="Apple-converted-space">                </span>f.style.left = Math.random() * 100 + 'vw';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>f.style.animationDuration = (Math.random() * 3 + 2) + 's';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.body.appendChild(f);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>setTimeout(() =&gt; f.remove(), 5000);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function forgiven() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const card = document.getElementById('mainCard');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Image 2: The "Happy/Accepted" photo</p>
-<p class="p1"><span class="Apple-converted-space">            </span>card.innerHTML = `</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;img src="https://i.ibb.co/fw7wXn4/Whats-App-Image-2026-03-28-at-00-26-38.jpg" class="profile-img" style="border-color: #4CAF50;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 style="color: #4CAF50;"&gt;Thank You Jyotudiiiiiiiiiiiii!&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;AA raha hu mai teri dhungi khaneeeeeeee numm nummm nummmm. ❤️&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>alert("Apology Accepted! Virtual hugs incoming... 🤗");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+    <div class="container" id="mainCard">
+        <div style="color: #ff4d6d; font-size: 40px;">❤️</div>
+        <img src="https://i.ibb.co/hR0MB6NN/Whats-App-Image-2026-04-04-at-00-42-25.jpg" class="profile-img">
+        <h1>I'm So Sorry Jyotuu</h1>
+        <p>I want to ask the forgiveness for what I did yesterday, I am really really sorry for all the things I did. I know this is just childish of me to do it in this way but I hope this will help you smile a bit.</p>
+        <p class="nickname">Please please please kuchuuuuu maaf kar deeeeee pleaseeee gochudiiiii.</p>
+        <p>Can we please clear the <b>"zeros"</b> between us and get back to being <b>"ones"</b>? 💻❤️</p>
+        <div class="btn-group">
+            <button id="yesBtn" onclick="forgiven()">Yes, I Forgive You</button>
+            <button id="noBtn" onmouseover="actionNo()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function actionNo() {
+            const noBtn = document.getElementById('noBtn');
+            noBtn.innerText = "aisa karegi ab";
+            const x = Math.random() * (window.innerWidth - 150);
+            const y = Math.random() * (window.innerHeight - 100);
+            noBtn.style.position = 'fixed';
+            noBtn.style.left = x + 'px';
+            noBtn.style.top = y + 'px';
+
+            for (let i = 0; i < 10; i++) {
+                const flowers = ['🌸', '💐', '🌹', '🌺', '🌷'];
+                const f = document.createElement('div');
+                f.className = 'flower';
+                f.innerText = flowers[Math.floor(Math.random() * flowers.length)];
+                f.style.left = Math.random() * 100 + 'vw';
+                f.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                document.body.appendChild(f);
+                setTimeout(() => f.remove(), 5000);
+            }
+        }
+
+        function forgiven() {
+            const card = document.getElementById('mainCard');
+            card.innerHTML = `
+                <img src="https://i.ibb.co/fw7wXn4/Whats-App-Image-2026-03-28-at-00-26-38.jpg" class="profile-img" style="border-color: #4CAF50;">
+                <h1 style="color: #4CAF50;">Thank You Jyotudiiiiiiiiiiiii!</h1>
+                <p>AA raha hu mai teri dhungi khaneeeeeeee numm nummm nummmm. ❤️</p>
+            `;
+            alert("Apology Accepted! Virtual hugs incoming... 🤗");
+        }
+    </script>
 </body>
 </html>
